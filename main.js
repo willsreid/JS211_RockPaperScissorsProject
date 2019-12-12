@@ -1,67 +1,62 @@
-// **THIS IS INCREDIBLY IMPORTANT THAT YOU DO BOTH SECTIONS!!! You will be doing only front-end work in 421 and you need to brush up on your HTML elements**
+// uses strict mode so strings are not coerced, variables are not hoisted, etc... 
+'use strict';
 
+// brings in the assert module for unit testing
+const assert = require('assert');
+// brings in the readline module to access the command line
+const readline = require('readline');
+// use the readline module to print out to the command line
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
-// ***************************
-//          PART ONE
-// ***************************
-// Write a JavaScript program to display the current day and time, start with:
-console.log(new Date)
+// the function that will be called by the unit test below
+const rockPaperScissors = (hand1, hand2) => {
 
-const displayDate = () => {
-  const currentDate = new Date()
+  // Write code here
+  // Use the unit test to see what is expected
 
-  document.getElementById("display-element").innerHTML = currentDate;
 }
- 
 
-// Write a JavaScript program to convert a number to a string.
+// the first function called in the program to get an input from the user
+// to run the function use the command: node main.js
+// to close it ctrl + C
+function getPrompt() {
+  rl.question('hand1: ', (answer1) => {
+    rl.question('hand2: ', (answer2) => {
+      console.log( rockPaperScissors(answer1, answer2) );
+      getPrompt();
+    });
+  });
+}
 
+// Unit Tests
+// You use them run the command: npm test main.js
+// to close them ctrl + C
+if (typeof describe === 'function') {
 
+  // most are notes for human eyes to read, but essentially passes in inputs then compares if the function you built return the expected output.
+  describe('#rockPaperScissors()', () => {
+    it('should detect a tie', () => {
+      assert.equal(rockPaperScissors('rock', 'rock'), "It's a tie!");
+      assert.equal(rockPaperScissors('paper', 'paper'), "It's a tie!");
+      assert.equal(rockPaperScissors('scissors', 'scissors'), "It's a tie!");
+    });
+    it('should detect which hand won', () => {
+      assert.equal(rockPaperScissors('rock', 'paper'), "Hand two wins!");
+      assert.equal(rockPaperScissors('paper', 'scissors'), "Hand two wins!");
+      assert.equal(rockPaperScissors('rock', 'scissors'), "Hand one wins!");
+    });
+    it('should scrub input to ensure lowercase with "trim"ed whitepace', () => {
+      assert.equal(rockPaperScissors('rOcK', ' paper '), "Hand two wins!");
+      assert.equal(rockPaperScissors('Paper', 'SCISSORS'), "Hand two wins!");
+      assert.equal(rockPaperScissors('rock ', 'sCiSsOrs'), "Hand one wins!");
+    });
+  });
+} else {
 
-// Write a JavaScript program to convert a string to the number.
+  // always returns ask the user for another input
+  getPrompt();
 
-
-
-// Write a JavaScript program that takes in different datatypes and prints out whether they are a:
-  // * Boolean
-  // * Null
-  // * Undefined
-  // * Number
-  // * NaN
-  // * String
-  
-
-  
-// Write a JavaScript program that adds 2 numbers together.
-
-
-
-// Write a JavaScript program that runs only when 2 things are true.
-
-
-
-// Write a JavaScript program that runs when 1 of 2 things are true.
-
-
-
-// Write a JavaScript program that runs when both things are not true.  
-
-// ***************************
-//         PART TWO
-// ***************************
-
-// 1. download Live-Server by Ritwick Dey, 
-// 2. reload VS Code, 
-// 3. click the "Go Live" button
-// 4. Go local host 5500 or http://127.0.0.1:5500/index.html to see your web page
-// 5. Or go use the `npm start` command and navigate to localhost:8080 (ctrl + C to close)
-// 6. go to `index.html` 
-// 7. create inputs, buttons and event listeners that render the code blocks you built above to the DOM.
-
-
-
-
-// Additional Resources
-// Video1: https://player.vimeo.com/video/377147232
-// Video2: https://www.youtube.com/embed/bkvH28PXLWc
-// Video3: https://www.youtube.com/embed/TrGI9Yki-24
+}
