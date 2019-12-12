@@ -4,26 +4,71 @@
 
 # Austin Coding Academy
 
-## JavaScript 211 Project: Current Date and Time
+## JavaScript 211 Project: Rock, Paper, Scissors
 
-### Part 1
+## Project Checklist
 
-1. Navigate to `main.js`
-1. Read the instructions and build the functions to satisfy the tasks.
-1. There are no tests for this project.
+1. Fork and Clone [Rock, Paper, Scissors Repo](https://github.com/AustinCodingAcademy/JS211_RockPaperScissorsProject.git)
+1. Ensure you have installed all dependencies/packages: `npm i`
+1. Practice running the unit tests for the program:
+    * `npm test main.js`
+1. Use a whiteboard to find a solution to the Rock, Paper, Scissors program
+1. Translate the broad ideas to psuedo code
+1. Convert the psuedo code to real JavaScript Code
+1. Type into your text editor the JavaScript code you've come up with one step at a time
+1. Work through your bugs.
+1. Play the game with the command: `node main.js`
+1. Achieve green checks for each of your unit tests.
 
-### Part 2
+******
+******
 
-1. Navigate to `index.html`
-1. Notice the link to `main.js`
-1. Display your results to the user in the DOM using `<button>` and `<input>`.
+# Rock, Paper, Scissors (R.P.S) Overview
+
+Build a function,that will take in an input from a user then another input from another user and compare them against one another to determine the winner of the game!
+
+## Project Objective - R.P.S
+
+1. Build a rock, paper, scissors game.
+1. Use the code plan below to get started.
+1. Start out by white boarding which means writing in English (no code) each step of that needs to be coded.
+
+#### Code Planning R.P.S
+
+1. User1 input of rock, paper, or scissors.
+1. User2 input of rock, paper, or scissors.
+1. Compare User1 input to User2 input.
+1. If User1 input is 'rock' and User2 input is 'scissor', User1 wins.
+1. If User1 input is 'rock' and User2 input is 'paper', User2 wins.
+1. If User1 input is 'rock' and User2 input is 'rock', it's a tie.
+1. If User1 input is 'paper' and User2 input is 'rock', User1 wins.
+1. If User1 input is 'paper' and User2 input is 'scissors', User2 wins.
+1. If User1 input is 'paper' and User2 input is 'paper', it's a tie.
+1. If User1 input is 'scissors' and User2 input is 'paper', User1 wins.
+1. If User1 input is 'scissors' and User2 input is 'rock', User2 wins.
+1. If User1 input is 'scissors' and User2 input is 'scissors', it's a tie.
+
+*Can you think of a simpler way?*
+
+### Follow-Up Video - R.P.S
+
+<iframe src="https://player.vimeo.com/video/377156267" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+******
+
+#### Push Yourself Further
+
+1. What should the program return if the user inputs something that isn't "rock", "paper", or "scissors"?
+1. Can you use `.trim()` to solve the problem if a user types in a space with their input?
+1. Minimize redundancy: D.R.Y. up your code. Are their ways to not type as much as you've typed? Can you make the code smaller?
+1. Compartmentalize your code into individual functions. This game doesn't have to run just one function, can you pull code blocks out and put them into other functions that can be called from `rockPaperScissors`?
 
 ### Hints
 
-1. Use [repl.it](https://www.repl.it) to write the solution code first. (its a faster environment vs using the `node main.js` command over and over again.)
-1. Download the Live Server package to VS Code by Ritwick Dey to view it at localhost:5500
-1. **OR** use the `npm start` command to view it at localhost:8080
-1. Use the [JS Docs at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString)
+1. Read ALL of the comments in `main.js`
+1. Read the Objective and Code Planning section above.
+1. Use the [JS Docs at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch) to convert long if/else statements to switch case statements.
+1. Push yourself further
 1. **Clone, setup, testing, and running instructions for all projects is below**
 
 ******
@@ -77,17 +122,6 @@ GitHub `git push`
 1. Every time you make a change *and push to GitHub*, this PR will automatically
 update. No need to do it more than once.
 
-#### Get latest workbook updates
-
-1. To get the latest code/homework/test updates, be sure to have a "clean
-working directory" by committing or removing all of your changes. You check for
-a "clean working environment" by running `git status` and making sure no files
-show up.
-
-1. Run `git pull upstream gh-pages`
-
-![Contributing workflow](https://docs.google.com/drawings/d/1WeKQxOHgPKfwjy_eKtlJO62Fu4XTCWFeqkAh1oIqICM/pub?w=960&h=720)
-
 ### Running the apps
 
 Simply run `node path/to/file.js`
@@ -111,3 +145,16 @@ Simply run `npm run lint`
 
 1. Run `npm start`
 1. To break out of the server, press `ctrl` + `c`
+
+#### Get latest workbook updates
+
+1. To get the latest code/homework/test updates, be sure to have a "clean
+working directory" by committing or removing all of your changes. You check for
+a "clean working environment" by running `git status` and making sure no files
+show up.
+
+1. Run `git pull upstream gh-pages`
+
+![Contributing workflow](https://docs.google.com/drawings/d/1WeKQxOHgPKfwjy_eKtlJO62Fu4XTCWFeqkAh1oIqICM/pub?w=960&h=720)
+
+
