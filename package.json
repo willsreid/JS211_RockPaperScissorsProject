@@ -1,10 +1,10 @@
 {
-  "name": "javascript-workbook",
+  "name": "rock-paper-scissors",
   "version": "1.0.0",
   "description": "Austin Coding Academy - JavaScript Workbook",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AustinCodingAcademy/javascript-workbook.git"
+    "url": "git+https://github.com/AustinCodingAcademy/JS211_RockPaperScissorsProject.git"
   },
   "scripts": {
     "lint": "htmllint {*.html,./**/*.html} && stylelint ./**/*.css && eslint .",
@@ -15,9 +15,9 @@
   },
   "author": "Kevin Colten",
   "bugs": {
-    "url": "https://github.com/AustinCodingAcademy/javascript-workbook/issues"
+    "url": "https://github.com/AustinCodingAcademy/JS211_RockPaperScissorsProject/issues"
   },
-  "homepage": "https://github.com/AustinCodingAcademy/javascript-workbook#readme",
+  "homepage": "https://github.com/AustinCodingAcademy/JS211_RockPaperScissorsProject#readme",
   "dependencies": {
     "eslint": "^3.19.0",
     "functional-javascript-workshop": "^1.0.6",
