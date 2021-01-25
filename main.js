@@ -32,11 +32,11 @@ function getPrompt() {
 }
 
 // Unit Tests
-// You use them run the command: npm test main.js
+// to use them run the command: npm test main.js
 // to close them ctrl + C
 if (typeof describe === 'function') {
 
-  // most are notes for human eyes to read, but essentially passes in inputs then compares if the function you built return the expected output.
+  // most are notes for human eyes to read, but essentially passes in inputs then compares if the function you built returns the expected output.
   describe('#rockPaperScissors()', () => {
     it('should detect a tie', () => {
       assert.equal(rockPaperScissors('rock', 'rock'), "It's a tie!");
