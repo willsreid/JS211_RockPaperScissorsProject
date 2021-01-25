@@ -13,8 +13,8 @@
 1. Practice running the unit tests for the program:
     * `npm test main.js`
 1. Use a whiteboard to find a solution to the Rock, Paper, Scissors program
-1. Translate the broad ideas to psuedo code
-1. Convert the psuedo code to real JavaScript Code
+1. Translate the broad ideas to pseudo code
+1. Convert the pseudo code to real JavaScript Code
 1. Type into your text editor the JavaScript code you've come up with one step at a time
 1. Work through your bugs.
 1. Play the game with the command: `node main.js`
@@ -25,20 +25,20 @@
 
 # Rock, Paper, Scissors (R.P.S) Overview
 
-Build a function,that will take in an input from a user then another input from another user and compare them against one another to determine the winner of the game!
+Build a function that will take in an input from a user then another input from another user and compare them against one another to determine the winner of the game!
 
-## Project Objective - R.P.S
+## Project Objective - R.P.S.
 
 1. Build a rock, paper, scissors game.
 1. Use the code plan below to get started.
-1. Start out by white boarding which means writing in English (no code) each step of that needs to be coded.
+1. Start out by white boarding—which means writing in English (no code)—each step that needs to be coded.
 
-#### Code Planning R.P.S
+#### Code Planning R.P.S.
 
 1. User1 input of rock, paper, or scissors.
 1. User2 input of rock, paper, or scissors.
 1. Compare User1 input to User2 input.
-1. If User1 input is 'rock' and User2 input is 'scissor', User1 wins.
+1. If User1 input is 'rock' and User2 input is 'scissors', User1 wins.
 1. If User1 input is 'rock' and User2 input is 'paper', User2 wins.
 1. If User1 input is 'rock' and User2 input is 'rock', it's a tie.
 1. If User1 input is 'paper' and User2 input is 'rock', User1 wins.
@@ -50,9 +50,9 @@ Build a function,that will take in an input from a user then another input from 
 
 *Can you think of a simpler way?*
 
-### Follow-Up Video - R.P.S
+### Follow-Up Video - R.P.S.
 
-<iframe src="https://player.vimeo.com/video/377156267" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+### [Repo Overview](https://player.vimeo.com/video/377156267)
 
 ******
 
@@ -60,7 +60,7 @@ Build a function,that will take in an input from a user then another input from 
 
 1. What should the program return if the user inputs something that isn't "rock", "paper", or "scissors"?
 1. Can you use `.trim()` to solve the problem if a user types in a space with their input?
-1. Minimize redundancy: D.R.Y. up your code. Are their ways to not type as much as you've typed? Can you make the code smaller?
+1. Minimize redundancy: D.R.Y. up your code. Are there ways to not type as much as you've typed? Can you make the code smaller?
 1. Compartmentalize your code into individual functions. This game doesn't have to run just one function, can you pull code blocks out and put them into other functions that can be called from `rockPaperScissors`?
 
 ### Hints
@@ -130,7 +130,7 @@ example `node 01week/rockPaperScissors.js`
 
 ### Running Tests
 
-Tests are a great way to make sure you code works the way you planned it would,
+Tests are a great way to make sure your code works the way you planned it would,
 and to make sure you don't break something in the future. We will be using them
 to test our understanding of the lesson. It's also our main way to assign grades
 for an assignment.
